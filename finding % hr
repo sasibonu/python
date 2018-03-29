@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    l=[]
+    for i in range(n):
+        name= input().split()
+        l.append(name)
+
+    query_name = input()
+    
+    a=[]
+    a=list(filter(lambda x: x[0]==query_name,l))
+    del(a[0][0])
+    
+    s=0
+    for i in range(len(a[0])):
+        s=s+(float((a[0][i])))
+    avg=(s/(len(a[0])))
+    print ("%0.2f" % avg)
