@@ -1,0 +1,30 @@
+Method 1:
+
+def mutate_string(string, position, character):
+    s=string[:int(i)]+c+string[int(i)+1:]
+    return(s)
+    
+    
+    if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
+    
+    
+    
+    
+    Method 2:
+    
+    def mutate_string(string, position, character):
+    l=list(string)
+    l[int(i)]=c
+    s=''.join(l)
+    return(s)
+    
+    
+    if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
