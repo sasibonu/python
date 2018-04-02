@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    N = int(input())
+    l=[]
+    m=0
+    k=[]
+    p=[]
+    for i in range(N):
+        s=list(map(str, input().strip().split()))
+        k.append(s)
+        p=k[i]        
+        if p[0]=='insert':
+            l.insert(int(p[1]),int(p[2]))
+        elif p[0]=='append':
+            l.append(int(p[1]))    
+        elif p[0]=='remove':
+            m=int(p[1])
+            l.remove(m)
+        elif(p[0]=='sort'):
+            l.sort()
+        elif(p[0]=='pop'):
+            l.pop()
+        elif(p[0]=='reverse'):
+            l.reverse()       
+        elif(p[0]=='print'):
+            print(l)
