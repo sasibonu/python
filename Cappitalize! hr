@@ -1,0 +1,27 @@
+import math
+import os
+import random
+import re
+import sys
+
+def solve(s):
+    l=[]
+    l=s
+    for i in range(2:len(l+1)):
+        if l(i-1)=" ":
+            l.upper()
+        elif i=1:
+            l.upper()
+    result = ''.join(l)
+    return(result)
+    
+    if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = raw_input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
