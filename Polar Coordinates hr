@@ -1,0 +1,43 @@
+import math
+s = raw_input()
+l=[]
+l=s
+for i in range(0,len(l)):
+    if (l[0]=="-"):
+        o=int(l[1])
+        d=int(l[2])
+        t=(pow(d,2))
+        a=(pow(o,2))
+        f=t+a
+        z=(pow(f,0.5))
+        k=(d/o)
+        p=math.atan(k)
+    elif  (l[1]=="-"):
+        o=int(l[0])
+        d=int(l[2])
+        t=(pow(d,2))
+        a=(pow(o,2))
+        f=t+a
+        z=(pow(f,0.5))
+        k=(d/o)
+        p=math.atan(-k)
+    elif  ((l[0]=="-") and (l[2]=="-")):
+        o=int(l[1])
+        d=int(l[3])
+        t=(pow(d,2))
+        a=(pow(o,2))
+        f=t+a
+        z=(pow(f,0.5))
+        k=(d/o)
+        p=math.atan(k)
+    else:
+        o=int(l[0])
+        d=int(l[2])
+        t=(pow(d,2))
+        a=(pow(o,2))
+        f=t+a
+        z=(pow(f,0.5))
+        k=(d/o)
+        p=math.atan(k)
+print(z)
+print(p)
