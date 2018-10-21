@@ -1,0 +1,10 @@
+def print_formatted(number):
+    for i in (1,n):
+        print oct(i)[1:]
+        print hex(i)[2:]
+        print bin(i)[2:]
+        
+        
+ if __name__ == '__main__':
+    n = int(raw_input())
+    print_formatted(n)
