@@ -1,3 +1,5 @@
+pypy2
+
 import collections
 n = int(raw_input())
 a=[]
