@@ -1,0 +1,12 @@
+import collections
+n = int(raw_input())
+a=[]
+b=[]
+e=[]
+a = [int(x) for x in raw_input().split()]
+c = int(raw_input())
+d= collections.Counter(a).values()
+for j in range(c):
+    b = [int(x) for x in raw_input().split()]
+    e.append(b)
+print(e)
