@@ -11,4 +11,6 @@ d= collections.Counter(a).values()
 for j in range(c):
     b = [int(x) for x in raw_input().split()]
     e.append(b)
-print(e)
+e.sort()
+for i in range(len(e)):
+    f=e.remove(e[0][i])
