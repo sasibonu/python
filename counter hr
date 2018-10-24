@@ -12,5 +12,18 @@ for j in range(c):
     b = [int(x) for x in raw_input().split()]
     e.append(b)
 e.sort()
-for i in range(len(e)):
-    f=e.remove(e[0][i])
+for j in range(len(e)):
+    k=e[j][0]
+    f.append(k)
+g= collections.Counter(a).keys()
+#h= collections.Counter(f).keys()
+
+   # for j in range(len(e)):
+    #    s+e[j][1]
+for i in range(len(f)):
+    for j in range(len(g)):
+        if (f[i]==g[j]):
+            if (a.count(f[i])>f.count(f[i])):
+                for j in range(len(e)):
+                        s=int(s)+int(e[j][1])
+print(s)
