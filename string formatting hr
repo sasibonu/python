@@ -1,10 +1,9 @@
-def print_formatted(number):
+def print_formatted(n):
     for i in (1,n):
-        print oct(i)[1:]
-        print hex(i)[2:]
-        print bin(i)[2:]
+        print ( str(i) + "  " + oct(i)[2:] + "  " + hex(i)[2:] + "  "  + bin(i)[2:] )
         
         
- if __name__ == '__main__':
-    n = int(raw_input())
-    print_formatted(n)
+
+if __name__ == '__main__':
+    n = int(input())
+
