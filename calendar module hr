@@ -1,0 +1,21 @@
+import calendar
+import datetime
+n= input().split()
+l=n[0]
+m=n[1]
+p=n[2]
+w=(datetime.datetime(int(p),int(l),int(m)).weekday())
+if w == 0:
+    print("MONDAY")
+if w == 1:
+    print("TUESDAY")
+if w == 2:
+    print("WEDNESDAY")
+if w == 3:
+    print("THURSDAY")
+if w == 4:
+    print("FRIDAY")
+if w == 5:
+    print("SATURDAY")
+if w == 6:
+    print("SUNDAY")
