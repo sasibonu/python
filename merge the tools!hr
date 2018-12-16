@@ -1,0 +1,19 @@
+def merge_the_tools(string, k):
+    n=len(string)
+    s = ""
+    for i in range(0,n,k):
+        strin=string[i:i+k]
+        for j in range(i,i+k):
+            if ((strin[j]==strin[i]) and (j!=i)):
+                s=strin[:j] + strin[j+1:]
+            print(s)
+                
+
+                
+        
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
+    
+   # galat hai bhai
