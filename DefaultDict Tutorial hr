@@ -18,11 +18,14 @@ for l in range(len(t)):
     for a in range(len(s)):
         if (s[a]==t[l]):
             c += 1
-        x=c
+    y=c-x
+    x=c
     for b in range(len(s)):
+        q=0
         if (s[b]==t[l]):
             d += 1
             print(b+1,end=(' ' if d<x else '\n'))
-        
-if (c==0):
-    print(-1)
+        elif(b==(len(s)-1) and y==0):
+            q=1
+    if(q==1):
+        print(-1)
