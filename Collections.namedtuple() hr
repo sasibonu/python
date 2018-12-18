@@ -1,0 +1,27 @@
+from collections import namedtuple
+n = int(input())
+l=[]
+st=input().split()
+x=str(st[0])
+y=str(st[1])
+z=str(st[2])
+k=str(st[3])
+j=0
+a=0
+Students = namedtuple('Students','x,y,z,k')
+for i in range(n):
+    t=(input().split())
+    s=Students(t[0],t[1],t[2],t[3])
+    if(x=='MARKS'):
+       l.append(s.x)
+    elif(y=='MARKS'):
+        l.append(s.y)
+    elif(z=='MARKS'):
+      l.append(s.z)
+    elif(k=='MARKS'):
+      l.append(s.k)
+while j<len(l):
+    a += (int(l[j]))
+    j += 1
+avg = a/n  
+print("%.2f"%avg)  
