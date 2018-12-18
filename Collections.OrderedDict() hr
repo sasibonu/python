@@ -1,0 +1,29 @@
+from collections import OrderedDict
+
+n= int(input())
+i=0
+j=0
+a=0
+l=[]
+k=[]
+coun=[]
+
+while i<n:
+    s=input().split()
+    t=s
+    if(len(s)==3):
+        s = [''.join(s[:2])]
+    for j in (t):
+        if j.isdigit():
+           l.append(j)
+    for a in (s):
+        if a.isdigit():
+            a
+        else:
+            k.append(a)
+    i += 1
+
+o=OrderedDict()
+for x in range(len(l)):
+    o[l[x]]=k[x]
+
