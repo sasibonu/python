@@ -1,32 +1,23 @@
+
 def minion_game(string):
-    # your code goes here
-    ks=0
-    kd=[]
-    std=[]
-    sts=0
+
+
+    vowels = 'AEIOU'
+    ks = 0
+    sts = 0
     for i in range(len(s)):
-        k=[]
-        st=[]
-        if(s[i]==("A"or "E"or "I"or "O"or"U")):
-            for j in range(i,len(s)):
-                k.append(s[j])
-                if (kd.count(''.join(k))==0):
-                    x=s.count(''.join(k))
-                    kd.append(''.join(k))
-                    ks += x
+        if (s[i] in vowels):
+            ks += (len(s)-i)
         else:
-            for l in range(i,len(s)):
-                st.append(s[l])
-                if (std.count(''.join(st))==0):
-                    y=s.count(''.join(st))
-                    std.append(''.join(st))
-                    sts += y
-    print(s.count('ANA'))
-    #if (ks>sts):
-     #   print("Kevin " + str(ks))
-    #else:
-       # print("Stuart " + str(sts))
+            sts += (len(s)-i)
 
-
-and 
-#https://stackoverflow.com/questions/2970520/string-count-with-overlapping-occurrences
+    if ks > sts:
+        print ("Kevin", ks)
+    elif ks < sts:
+        print ("Stuart", sts)
+    else:
+        print ("Draw")
+    
+if __name__ == '__main__':
+s = input()
+minion_game(s)
