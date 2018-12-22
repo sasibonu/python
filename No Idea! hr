@@ -1,5 +1,5 @@
 x,y = input().split()
-m,a,b = (input().split(),input().split(),input().split())
+m,a,b = (input().split(),set(input().split()),set(input().split()))
 c=0
 for i in (m):
     if (i in (a)):
@@ -8,6 +8,7 @@ for i in (m):
         c -= 1
 
 print(c)
+
 
 OR
 
