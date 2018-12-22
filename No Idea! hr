@@ -1,0 +1,10 @@
+x,y = input().split()
+m,a,b = (input().split(),input().split(),input().split())
+c=0
+for i in (m):
+    if (i in (a)):
+        c += 1
+    elif (i in (b)):
+        c -= 1
+
+print(c)
