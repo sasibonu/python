@@ -1,0 +1,13 @@
+k,m = input().split()
+x=[]
+y=[]
+for i in range(int(k)):
+    l=(input().split())
+    y=l[1:]
+    z= list(set(map(int,y)))
+    p=pow(max(z),2)
+    x.append(p)
+s = sum(x)
+print(s%int(m))
+
+  #nahi chala
