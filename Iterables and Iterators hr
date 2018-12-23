@@ -1,0 +1,20 @@
+from itertools import combinations
+
+m= int(input())
+s = input().split()
+a = int(input())
+l=[]
+x=[]
+n=0
+for i in range(len(s)):
+    l.append(i+1)
+    if (s[i]=='a'):
+        x.append(i+1)
+k = (list(combinations(l,a)))
+d=(len(k))
+for j in (k):
+    for y in (x):
+        if (y in j):
+            n += 1
+            break
+print(n/d)
