@@ -1,0 +1,30 @@
+l = str(input().split())
+ss=[]
+cc=[]
+dd=[]
+e1=[]
+o1=[]
+for i in (l):
+    if (i.islower()):
+        ss.append(i)
+        s1=(sorted(ss))
+    elif(i.isupper()):
+        cc.append(i)
+        c1=(sorted(cc))
+    elif(i.isdigit()):
+        dd.append(i)
+if len(dd)!= 0:
+    for j in range(len(dd)):
+        if (int(dd[j])%2 == 0):
+            e1.append(dd[j])
+            e=sorted(e1)
+        else:
+            o1.append(dd[j])
+            o=sorted(o1)
+if len(dd)!= 0:
+    out = (s1+c1+o+e)
+else:
+    out = (s1+c1)
+for k in (out):
+    outp = ''.join(out)
+print(outp)
