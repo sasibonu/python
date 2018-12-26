@@ -1,0 +1,23 @@
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    n,m = input().split()
+    l = []
+    o=[]
+    for i in range(int(n)):
+        l.append(list(map(int, input().rstrip().split())))
+    k = int(input())
+    for j in (l):
+        o.append(j[k])
+    r=list(set(sorted(o)))
+    for x in (r):
+        for y in (l):
+            if(y[k]==x):
+                z=str(y)
+                a=(z.strip('[]'))
+                b = (a.replace(",",""))
+                print(b)
