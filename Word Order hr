@@ -1,0 +1,15 @@
+n = int(input())
+l=[]
+t=[]
+r=[]
+for i in range(n):
+    l.append(input())
+t=l[::-1]
+for m in (l):
+    if (t.count(m)>1):
+        t.remove(m)
+r=t[::-1]
+print(len(r))
+for j in (r):
+    k=l.count(j)
+    print(k,end=' ')
