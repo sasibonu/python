@@ -1,0 +1,26 @@
+import math
+import os
+import random
+import re
+import sys
+import collections
+c=[]
+l=[]
+
+if __name__ == '__main__':
+    st = input()
+    s = sorted(st)
+    l = list(s)
+    o = (collections.Counter(l).most_common(1)[0])
+    r = list(o)
+    print(r[0],r[1])
+    for i in range(l.count(o[0][0])):
+        l.remove(o[0][0])
+    o = (collections.Counter(l).most_common(1)[0])
+    r = list(o)
+    print(r[0],r[1])
+    for i in range(l.count(o[0][0])):
+        l.remove(o[0][0])
+    o = (collections.Counter(l).most_common(1)[0])
+    r = list(o)
+    print(r[0],r[1])
