@@ -4,7 +4,6 @@ import random
 import re
 import sys
 import collections
-c=[]
 l=[]
 
 if __name__ == '__main__':
