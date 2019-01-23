@@ -1,0 +1,49 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'solve' function below.
+#
+# The function accepts following parameters:
+#  1. INTEGER n
+#  2. INTEGER_ARRAY a
+#
+
+def solve(n,k,a):
+    s = sorted(a)
+    t = sorted(a)
+    d = []
+    b = 0
+    if (n == k):
+        print(min(a))
+    else:
+        m = min(a)
+        x = max(a)
+        o = []
+        for i in range(a.count(m)):
+            s.remove(m)
+        for i in range(a.count(x)):
+            s.remove(x)
+        for j in ((s)):
+            c = j/a.count(m)
+            d.append(c)
+            b = sum(d)
+        for n in range(a.count(m)):
+            t[n] = t[n]+b
+        print(t)
+
+if __name__ == '__main__':
+    first_multiple_input = input().rstrip().split()
+
+    n = int(first_multiple_input[0])
+
+    k = int(first_multiple_input[1])
+
+    a = list(map(int, input().rstrip().split()))
+
+    solve(n,k,a)
